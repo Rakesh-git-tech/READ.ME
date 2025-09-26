@@ -1,1 +1,184 @@
-Homoe page program and details
+#Homoe page program and details
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <style>
+        /* Basic Reset & Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container for centering content */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation Bar */
+        .main-header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .main-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .main-nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        .main-nav a:hover {
+            color: #77aaff; /* A light blue for hover effect */
+        }
+
+        /* Hero Section (Main Showcase) */
+        .hero {
+            background: #77aaff;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6347; /* A nice coral color */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #e55337;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+        }
+        
+        .feature-box {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+
+        .feature-box h3 {
+            color: #333;
+        }
+
+        /* Footer */
+        .main-footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        /* Responsive Design for smaller screens */
+        @media(max-width: 768px){
+            .main-nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .feature-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>My Awesome Website</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to the Future!</h2>
+            <p>Discover amazing things and join our community today.</p>
+            <a href="#" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="feature-box">
+            <h3>🚀 Fast & Reliable</h3>
+            <p>Our services are optimized for speed and performance, ensuring you get the best experience possible.</p>
+        </div>
+        <div class="feature-box">
+            <h3>🔒 Secure & Private</h3>
+            <p>We prioritize your security with top-notch encryption and privacy policies you can trust.</p>
+        </div>
+        <div class="feature-box">
+            <h3>💬 24/7 Support</h3>
+            <p>Our dedicated support team is here to help you around the clock with any questions you may have.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 My Awesome Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
