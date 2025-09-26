@@ -1,0 +1,5 @@
+student portal demo 
+name:Rakesh
+class:BSC CS B
+Roll no:37
+college:ADOTYA DEGREE COLLEGE
